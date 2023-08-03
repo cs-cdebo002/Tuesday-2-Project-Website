@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Driver.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">Driver.java</span></div><h1>Driver.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+/*
+ * main program in charge of putting everything together
+ * javac main/*.java 
+ * (complied with)
+ * java main.Driver   D:\ODU\Summer2023\Trying\main\resources
+ * (location of main) (Path to website)
+ */
+<span class="nc" id="L22">public class Driver {</span>
+    public static void main(String[] args) throws IOException {
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        if (args.length &lt; 1) {</span>
+<span class="nc" id="L25">            System.out.println(&quot;Usage: java Driver &lt;website_path_or_url&gt;&quot;);</span>
+<span class="nc" id="L26">            return;</span>
+        }
+
+<span class="nc" id="L29">        String websitePathOrUrl = args[0];</span>
+
+<span class="nc" id="L31">        List&lt;String&gt; urls = Arrays.stream(args)</span>
+<span class="nc" id="L32">            .skip(1)</span>
+<span class="nc" id="L33">            .collect(Collectors.toList());</span>
+
+<span class="nc" id="L35">        List&lt;URL&gt; urlList = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        for (String url : urls) {</span>
+            try {
+<span class="nc" id="L38">                urlList.add(new URL(url));</span>
+<span class="nc" id="L39">            } catch (Exception e) {</span>
+<span class="nc" id="L40">                System.out.println(&quot;Invalid URL: &quot; + url);</span>
+<span class="nc" id="L41">            }</span>
+<span class="nc" id="L42">        }</span>
+
+<span class="nc" id="L44">        Website Wsite = new Website();</span>
+<span class="nc" id="L45">        Wsite.setPath(websitePathOrUrl);</span>
+
+<span class="nc" id="L47">        Website site = new WebsiteBuilder()</span>
+<span class="nc" id="L48">            .withPath(Paths.get(websitePathOrUrl))</span>
+<span class="nc" id="L49">            .withURLs(urlList)</span>
+<span class="nc" id="L50">            .build();</span>
+
+<span class="nc" id="L52">        ReportManager manager = new ReportManager();</span>
+<span class="nc" id="L53">        manager.setSourceData(site);</span>
+
+        // We want to control when this happens... since time does not pause.
+<span class="nc" id="L56">        manager.determineBaseFileName();</span>
+
+       // Write the reports before writing the filenames.
+        // If something goes wrong... we do not want to
+        // output the filename for a report that was not generated
+        try {
+<span class="nc" id="L62">            manager.writeall(); // Corrected method name to writeAll()</span>
+<span class="nc" id="L63">        } catch (IOException e) {</span>
+<span class="nc" id="L64">            System.out.println(&quot;An error occurred while writing the report: &quot; + e.getMessage());</span>
+<span class="nc" id="L65">        }</span>
+
+<span class="nc" id="L67">        BufferedWriter writer = new BufferedWriter(</span>
+            new OutputStreamWriter(System.out)
+        );
+<span class="nc" id="L70">        manager.writeReportNames(writer);</span>
+<span class="nc" id="L71">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

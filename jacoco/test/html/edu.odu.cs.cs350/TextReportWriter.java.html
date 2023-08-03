@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TextReportWriter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">TextReportWriter.java</span></div><h1>TextReportWriter.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.nio.file.Path;
+
+public class TextReportWriter {
+    private Website site;
+    private String BaseFileName;
+
+    /**
+     * Default constructor should never be used. &quot;Disable&quot; it by making it
+     * private.
+     */
+<span class="fc" id="L19">    public TextReportWriter() {</span>
+<span class="fc" id="L20">        this.site = null;</span>
+<span class="fc" id="L21">        this.BaseFileName = null;</span>
+<span class="fc" id="L22">    }</span>
+
+    /**
+     * Constructor with parameters.
+     *
+     * @param website      The website object.
+     * @param BaseFileName The base file name.
+     */
+<span class="nc" id="L30">    public TextReportWriter(Website website, String BaseFileName) {</span>
+<span class="nc" id="L31">        this.site = website;</span>
+<span class="nc" id="L32">        this.BaseFileName = BaseFileName;</span>
+<span class="nc" id="L33">    }</span>
+
+    /**
+     * Set the data source for the TextReportWriter.
+     *
+     * @param sourceData 
+     */
+    public void setSourceData(Website sourceData) {
+<span class="nc" id="L41">        this.site = sourceData;</span>
+<span class="nc" id="L42">    }</span>
+    
+    /**
+     * Set the base file name for the report.
+     *
+     * @param newBaseFileName The new base file name.
+     */
+    public void setBaseFileName(String newBaseFileName) {
+<span class="nc" id="L50">        this.BaseFileName = newBaseFileName;</span>
+<span class="nc" id="L51">    }</span>
+
+     /**
+     * Get the base file name.
+     *
+     * @return The base file name as a String.
+     */
+    public String getBaseFileName() {
+<span class="fc" id="L59">        return BaseFileName;</span>
+    }
+    
+    /**
+     * Sort the website paths lexicographically in lowercase.
+     *
+     * @param paths The list of website paths to be sorted.
+     * @throws IOException
+     */
+    public void sortWebsitesLexicographically(List&lt;Path&gt; paths){
+        // Sort the paths lexicographically in lowercase
+<span class="fc" id="L70">        Collections.sort(paths, Comparator.comparing(p -&gt; p.toString().toLowerCase()));</span>
+<span class="fc" id="L71">    }</span>
+
+    /**
+     * Prepare and write the sorted website paths to the output file.
+     *
+     * @param paths          The list of website paths
+     * @param outputFileName The name of the output file
+     * @throws IOException 
+     */
+    public void prepare(List&lt;Path&gt; paths, String outputFileName) throws IOException {
+        // Check if the list of paths is empty or null
+<span class="pc bpc" id="L82" title="2 of 4 branches missed.">        if (paths == null || paths.isEmpty()) {</span>
+<span class="nc" id="L83">            throw new IllegalArgumentException(&quot;The list of paths is empty or null.&quot;);</span>
+        }
+
+        // Sort the paths lexicographically first
+<span class="fc" id="L87">        sortWebsitesLexicographically(paths);</span>
+
+        // Write the sorted paths to the output file
+<span class="fc" id="L90">        String outputFilePath = outputFileName + &quot;.txt&quot;;</span>
+<span class="fc" id="L91">        try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {</span>
+<span class="fc bfc" id="L92" title="All 2 branches covered.">            for (Path path : paths) {</span>
+                //size of images here TODO
+<span class="fc" id="L94">                writer.write(path.toString());</span>
+<span class="fc" id="L95">                writer.newLine();</span>
+<span class="fc" id="L96">            }</span>
+<span class="fc" id="L97">            writer.write(&quot;Total Size of all pages: &quot;); // The totalSize calculation TODO</span>
+        }
+<span class="fc" id="L99">    }</span>
+}
+
+    
+
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HTMLDocBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">HTMLDocBuilder.java</span></div><h1>HTMLDocBuilder.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.util.*;
+import java.net.URL;
+import java.nio.file.Path;
+import java.io.*;
+import org.jsoup.*;
+
+public class HTMLDocBuilder{
+    
+    private List&lt;Resource&gt; scripts;
+    private List&lt;Resource&gt; stylesheets;
+    private List&lt;Resource&gt; images;
+    private List&lt;Resource&gt; anchors;
+
+    private List&lt;URL&gt; baseUrls;
+    private Path baseDirectory;
+
+    private BufferedReader readBuffer;
+
+    /**
+     * Creates and initializes an HTMLDocBuilder object
+     * @param n/a
+     */
+<span class="nc" id="L25">    public HTMLDocBuilder(){</span>
+
+        // Initializes the lists of resources as empty lists
+<span class="nc" id="L28">        this.scripts = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L29">        this.images = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L30">        this.scripts = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L31">        this.stylesheets = new ArrayList&lt;&gt;();</span>
+
+        // Initializes the list of base urls
+<span class="nc" id="L34">        this.baseUrls = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L35">    }</span>
+
+
+    /**
+     * Reads the content of an HTML doc using a buffered reader
+     * @param 
+     * @return n/a
+     */
+<span class="nc" id="L43">    public void withContentFrom(/*reader: BufferedReader*/){}</span>
+
+
+    /**
+     * Reads the content of an HTML doc using a file name
+     * @param 
+     * @return n/a
+     */
+    public void withContentFrom(File HTMLFile){
+        
+        /* 
+        readBuffer = new BufferedReader(new FileReader(HTMLFile));
+        //String fileAsString = readBuffer.lines().collect(Collectors.joining(System.lineSeparator()));
+        String fileAsString;
+
+        // Extracts HTML tags from the file
+        Document doc = Jsoup.parse(fileAsString);
+        Elements elements = doc.select(&quot;a&quot;);
+        List&lt;String&gt; elementList = new ArrayList&lt;&gt;();
+        for(Element elm : elements){
+            elementList.add(elm);
+        }
+        */
+<span class="nc" id="L66">    }</span>
+
+
+    /**
+     * Reads the content of an HTML doc using a directory path
+     * @param 
+     * @return n/a
+     */
+<span class="nc" id="L74">    public void withBaseDirectory(/*siteRoot: Path*/){}</span>
+
+
+    /**
+     * Reads the content of an HTML doc using a base url
+     * @param 
+     * @return n/a
+     */
+<span class="nc" id="L82">    public void withBaseUrls(/*urls: Collection&lt;URL&gt;*/){}</span>
+
+
+    /**
+      * Extracts the anchor tags from an html document and stores them as Resource objects in the anchors list
+      * @param n/a
+      * @return n/a
+      *
+    */
+    public void extractAnchors() throws IOException, FileNotFoundException{
+
+        // Turn tags into a list of strings
+<span class="nc" id="L94">        List&lt;String&gt; extractedStrings = new ArrayList&lt;&gt;();</span>
+        //...
+
+        // Loop for every tag extracted
+<span class="nc bnc" id="L98" title="All 2 branches missed.">        for(String URIAsString : extractedStrings){</span>
+
+            // Get the URI
+<span class="nc" id="L101">            String tagURI = URIAsString;</span>
+            //...
+
+            // Creates a resource builder object which determines the resource's values
+<span class="nc" id="L105">            ResourceBuilder builder = new ResourceBuilder(tagURI, ResourceKind.ANCHOR, baseUrls);</span>
+<span class="nc" id="L106">            anchors.add(builder.buildResource());</span>
+<span class="nc" id="L107">        }</span>
+<span class="nc" id="L108">    }</span>
+
+
+    /**
+      * This function extracts the image tags from an html document and stores them as Resource objects in the images list
+      * @param n/a
+      * @return n/a
+      *
+    */
+    public void extractImages() throws IOException, FileNotFoundException{
+
+        // Turn tags into a list of strings
+<span class="nc" id="L120">        List&lt;String&gt; extractedStrings = new ArrayList&lt;&gt;();</span>
+        //...
+
+        // Loop for every tag extracted
+<span class="nc bnc" id="L124" title="All 2 branches missed.">        for(String URIAsString : extractedStrings){</span>
+
+            // Get the URI
+<span class="nc" id="L127">            String tagURI = URIAsString;</span>
+            //...
+
+            // Creates a resource builder object which determines the resource's values
+<span class="nc" id="L131">            ResourceBuilder builder = new ResourceBuilder(tagURI, ResourceKind.IMAGE, baseUrls);</span>
+<span class="nc" id="L132">            images.add(builder.buildResource());</span>
+<span class="nc" id="L133">        }</span>
+<span class="nc" id="L134">    }</span>
+
+
+    /**
+      * This function extracts the script tags from an html document and stores them as Resource objects in the scripts list
+      * @param n/a
+      * @return n/a
+      *
+    */
+    public void extractScripts() throws IOException, FileNotFoundException{
+
+        // Turn tags into a list of strings
+<span class="nc" id="L146">        List&lt;String&gt; extractedStrings = new ArrayList&lt;&gt;();</span>
+        //...
+
+        // Loop for every tag extracted
+<span class="nc bnc" id="L150" title="All 2 branches missed.">        for(String URIAsString : extractedStrings){</span>
+
+            // Get the URI
+<span class="nc" id="L153">            String tagURI = URIAsString;</span>
+            //...
+
+            // Creates a resource builder object which determines the resource's values
+<span class="nc" id="L157">            ResourceBuilder builder = new ResourceBuilder(tagURI, ResourceKind.SCRIPT, baseUrls);</span>
+<span class="nc" id="L158">            scripts.add(builder.buildResource());</span>
+<span class="nc" id="L159">        }</span>
+<span class="nc" id="L160">    }</span>
+
+
+    /**
+      * This function extracts the stylesheet tags from an html document and stores them as Resource objects in the stylesheets list
+      * @param n/a
+      * @return n/a
+      *
+    */
+    public void extractStylesheets() throws IOException, FileNotFoundException{
+
+        // Turn tags into a list of strings
+<span class="nc" id="L172">        List&lt;String&gt; extractedStrings = new ArrayList&lt;&gt;();</span>
+        //...
+
+        // Loop for every tag extracted
+<span class="nc bnc" id="L176" title="All 2 branches missed.">        for(String URIAsString : extractedStrings){</span>
+
+            // Get the URI
+<span class="nc" id="L179">            String tagURI = URIAsString;</span>
+            //...
+
+            // Creates a resource builder object which determines the resource's values
+<span class="nc" id="L183">            ResourceBuilder builder = new ResourceBuilder(tagURI, ResourceKind.STYLESHEET, baseUrls);</span>
+<span class="nc" id="L184">            stylesheets.add(builder.buildResource());</span>
+<span class="nc" id="L185">        }</span>
+<span class="nc" id="L186">    }</span>
+
+
+    /**
+     * This function runs all of the extraction processes and then creates an HTMLDoc object using the data
+     * @param n/a
+     * @return createdHTMLDoc an HTMLDoc object created from an HTML file
+     * @throws IOException
+     * @throws FileNotFoundException
+     */
+    public HTMLDoc build() throws FileNotFoundException, IOException{
+
+        // Get info from html document with one of the reader functions
+
+        // Extracts the resources from an HTML document
+<span class="nc" id="L201">        extractAnchors();</span>
+<span class="nc" id="L202">        extractImages();</span>
+<span class="nc" id="L203">        extractScripts();</span>
+<span class="nc" id="L204">        extractStylesheets();</span>
+
+        // Creates a new HTMLDoc object using the extracted resources
+<span class="nc" id="L207">        HTMLDoc createdHTMLDoc = new HTMLDoc(scripts, stylesheets, images, anchors);</span>
+
+        // set url/path
+
+        // Returns the created HTMLDoc object
+<span class="nc" id="L212">        return createdHTMLDoc;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

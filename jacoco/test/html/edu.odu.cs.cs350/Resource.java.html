@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Resource.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">Resource.java</span></div><h1>Resource.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.util.*;
+import java.net.URL;
+import java.nio.file.Path;
+
+<span class="fc" id="L7">enum Locality{ INTERPAGE, INTRAPAGE, EXTERNAL }</span>
+<span class="fc" id="L8">enum ResourceKind{ IMAGE, STYLESHEET, SCRIPT, ANCHOR, VIDEO, AUDIO, ARCHIVE, OTHER }</span>
+
+public class Resource{
+
+    private Path path;
+    private URL url;
+    private List&lt;HTMLDoc&gt; foundOn;
+    private Locality linkLocality;
+    private long sizeOf;
+    private ResourceKind resourceType;
+
+    
+    /**
+     * Creates a new resource object using a url, alongside its other values
+     * @param inUrl represents the resource's url
+     * @param inLocality represents the resource's link locality (interpage, intrapage, or external)
+     * @param inType represents the resource's type (image, stylesheet, script, anchor, video, audio, archive, or other)
+     */
+<span class="fc" id="L26">    public Resource(URL inUrl, Locality inLocality, ResourceKind inType){</span>
+<span class="fc" id="L27">        url = inUrl;</span>
+<span class="fc" id="L28">        linkLocality = inLocality;</span>
+<span class="fc" id="L29">        resourceType = inType;</span>
+
+        // Convert URL to path?
+<span class="fc" id="L32">        this.setPath(null);</span>
+<span class="fc" id="L33">    }</span>
+
+
+    /**
+     * Creates a new resource object using a path, alongside its other values
+     * @param inPath represents the resource's path
+     * @param inLocality represents the resource's link locality (interpage, intrapage, or external)
+     * @param inType represents the resource's type (image, stylesheet, script, anchor, video, audio, archive, or other)
+     */
+<span class="fc" id="L42">    public Resource(Path inPath, Locality inLocality, ResourceKind inType){</span>
+<span class="fc" id="L43">        path = inPath;</span>
+<span class="fc" id="L44">        linkLocality = inLocality;</span>
+<span class="fc" id="L45">        resourceType = inType;</span>
+
+        // Convert path to URL?
+<span class="fc" id="L48">        this.setUrl(null);</span>
+<span class="fc" id="L49">    }</span>
+
+    
+    /**
+     * Returns the path of the resource
+     * @param n/a
+     */
+<span class="fc" id="L56">    public Path getPath(){ return path; }</span>
+
+    /**
+     * Returns the url of the resource
+     * @param n/a
+     */
+<span class="fc" id="L62">    public URL getUrl(){ return url; }</span>
+
+    /**
+     * Returns the link locality
+     * @param n/a
+     */
+<span class="fc" id="L68">    public Locality getLinkLocality(){ return linkLocality; }</span>
+
+    /**
+     * Returns the size of the resource
+     * @param n/a
+     */
+<span class="nc" id="L74">    public long getSizeOf(){ return sizeOf; }</span>
+
+    /**
+     * Returns a vector containing every htmldoc the resource is found on
+     * @param n/a
+     */
+<span class="nc" id="L80">    public List&lt;HTMLDoc&gt; getFoundOn() { return foundOn; }</span>
+
+    /**
+     * Returns the resource's type
+     * @param n/a
+     */
+<span class="fc" id="L86">    public ResourceKind getResourceKind(){ return resourceType; }</span>
+
+
+    
+    /**
+     * Sets the path of the resource to the provided string
+     * @param inPath the provided string which is used to set the new path
+     */
+<span class="fc" id="L94">    public void setPath(Path inPath){ path = inPath; }</span>
+
+    /**
+     * Sets the url of the resource to the provided string
+     * @param inUrl the provided string which is used to set the new url
+     */
+<span class="fc" id="L100">    public void setUrl(URL inUrl){ url = inUrl; }</span>
+
+    /**
+     * Sets the locality of the resource to the provided value
+     * @param inLocality the value which is used to set the new locality
+     */
+<span class="nc" id="L106">    public void setLocality(Locality inLocality){ linkLocality = inLocality; }</span>
+
+    /**
+     * Sets the size of the resource to the provided value
+     * @param inSize the provided value which is used to set the new size
+     */
+<span class="nc" id="L112">    public void setSize(long inSize){ sizeOf = inSize; }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2023-08-02T22:37:54.782">
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\Boundary.java">
+<violation beginline="5" endline="29" begincolumn="23" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350" class="Boundary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="5" endline="29" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="Boundary" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+The utility class name 'Boundary' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
+</violation>
+<violation beginline="17" endline="17" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Boundary" method="method" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="18" endline="18" begincolumn="17" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Boundary" method="method" variable="keyboard" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this Scanner object are closed after use
+</violation>
+<violation beginline="18" endline="18" begincolumn="9" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Boundary" method="method" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'keyboard' could be declared final
+</violation>
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Boundary" method="method" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="24" endline="24" begincolumn="30" endcolumn="33" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Boundary" method="method" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="25" endline="25" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Boundary" method="method" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\BrokenLinks.java">
+<violation beginline="8" endline="33" begincolumn="26" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350" class="BrokenLinks" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="10" endline="10" begincolumn="40" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" variable="url" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'url' is not assigned and could be declared final
+</violation>
+<violation beginline="12" endline="12" begincolumn="13" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'link' could be declared final
+</violation>
+<violation beginline="13" endline="13" begincolumn="13" endcolumn="84" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'connection' could be declared final
+</violation>
+<violation beginline="14" endline="14" begincolumn="13" endcolumn="47" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="15" endline="15" begincolumn="13" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'responseCode' could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="32" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="16" endline="16" begincolumn="13" endcolumn="41" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="16" endline="16" begincolumn="21" endcolumn="39" rule="UselessParentheses" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="isLinkBroken" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="23" endline="23" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'url' could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="9" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="BrokenLinks" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'isBroken' could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="BrokenLinks" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="29" endline="29" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="BrokenLinks" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\Driver.java">
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Driver" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.Path'
+</violation>
+<violation beginline="22" endline="72" begincolumn="21" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350" class="Driver" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="23" endline="23" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="27" endcolumn="27" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="25" endline="25" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="29" endline="29" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'websitePathOrUrl' could be declared final
+</violation>
+<violation beginline="31" endline="33" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'urls' could be declared final
+</violation>
+<violation beginline="31" endline="33" begincolumn="29" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="31" endline="33" begincolumn="29" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="35" endline="35" begincolumn="9" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'urlList' could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="14" endcolumn="23" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'url' could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="29" endcolumn="40" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="39" endline="39" begincolumn="22" endcolumn="30" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="40" endline="40" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="37" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'Wsite' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="17" endcolumn="21" rule="LocalVariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="Wsite" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablenamingconventions" priority="1">
+The local variable name 'Wsite' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="44" endline="44" begincolumn="17" endcolumn="21" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="Wsite" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'Wsite' starts with uppercase character.
+</violation>
+<violation beginline="47" endline="50" begincolumn="9" endcolumn="20" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'site' could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'manager' could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Driver" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="67" endline="67" begincolumn="24" endcolumn="29" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Driver" method="main" variable="writer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this BufferedWriter object are closed after use
+</violation>
+<violation beginline="67" endline="69" begincolumn="9" endcolumn="9" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Driver" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'writer' could be declared final
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\HTMLDoc.java">
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDoc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.Path'
+</violation>
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDoc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.Paths'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="38" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDoc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.net.MalformedURLException'
+</violation>
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="17" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDoc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.io'
+</violation>
+<violation beginline="9" endline="9" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDoc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.beans.Transient'
+</violation>
+<violation beginline="13" endline="13" begincolumn="28" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDoc" variable="scriptList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="28" endcolumn="37" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDoc" variable="scriptList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'scriptList' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="14" endline="14" begincolumn="28" endcolumn="41" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDoc" variable="stylesheetList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="28" endcolumn="41" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDoc" variable="stylesheetList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'stylesheetList' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="15" endline="15" begincolumn="28" endcolumn="36" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDoc" variable="imageList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="28" endcolumn="36" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDoc" variable="imageList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'imageList' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="16" endline="16" begincolumn="28" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDoc" variable="anchorList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="28" endcolumn="37" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDoc" variable="anchorList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'anchorList' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="17" endline="17" begincolumn="20" endcolumn="28" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDoc" variable="localPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="23" endcolumn="29" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDoc" variable="urlList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'urlList'.
+</violation>
+<violation beginline="18" endline="18" begincolumn="23" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDoc" variable="urlList" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="30" rule="SingularField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDoc" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'urlList' could be replaced by a local variable.
+</violation>
+<violation beginline="29" endline="29" begincolumn="101" endcolumn="124" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inAnchors' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="76" endcolumn="98" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inImages' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="127" endcolumn="139" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inPath' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="20" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inScripts' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="46" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inStylesheets" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inStylesheets' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="142" endcolumn="157" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inURLs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inURLs' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="101" endcolumn="124" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inAnchors' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="76" endcolumn="98" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inImages' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="20" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inScripts' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="46" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="HTMLDoc" variable="inStylesheets" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inStylesheets' is not assigned and could be declared final
+</violation>
+<violation beginline="94" endline="94" begincolumn="27" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="addScript" variable="toAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'toAdd' is not assigned and could be declared final
+</violation>
+<violation beginline="100" endline="100" begincolumn="31" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="addStylesheet" variable="toAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'toAdd' is not assigned and could be declared final
+</violation>
+<violation beginline="106" endline="106" begincolumn="26" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="addImage" variable="toAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'toAdd' is not assigned and could be declared final
+</violation>
+<violation beginline="112" endline="112" begincolumn="27" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDoc" method="addAnchor" variable="toAdd" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'toAdd' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\HTMLDocBuilder.java">
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="19" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDocBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.jsoup'
+</violation>
+<violation beginline="11" endline="11" begincolumn="28" endcolumn="34" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="scripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="11" endline="11" begincolumn="28" endcolumn="34" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="scripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'scripts' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="12" endline="12" begincolumn="28" endcolumn="38" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="stylesheets" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="12" endline="12" begincolumn="28" endcolumn="38" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="stylesheets" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'stylesheets' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="13" endline="13" begincolumn="28" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="images" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="28" endcolumn="33" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="images" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'images' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="14" endline="14" begincolumn="28" endcolumn="34" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="anchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="23" endcolumn="30" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="baseUrls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="23" endcolumn="30" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="baseUrls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'baseUrls' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="17" endline="17" begincolumn="18" endcolumn="30" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="baseDirectory" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'baseDirectory'.
+</violation>
+<violation beginline="19" endline="19" begincolumn="28" endcolumn="37" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.odu.cs.cs350" class="HTMLDocBuilder" variable="readBuffer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'readBuffer'.
+</violation>
+<violation beginline="51" endline="51" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="withContentFrom" variable="HTMLFile" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'HTMLFile' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="38" endcolumn="45" rule="FormalParameterNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="withContentFrom" variable="HTMLFile" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'HTMLFile' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="51" endline="51" begincolumn="38" endcolumn="45" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="withContentFrom" variable="HTMLFile" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'HTMLFile' starts with uppercase character.
+</violation>
+<violation beginline="94" endline="94" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'extractedStrings' could be declared final
+</violation>
+<violation beginline="98" endline="98" begincolumn="13" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'URIAsString' could be declared final
+</violation>
+<violation beginline="98" endline="98" begincolumn="20" endcolumn="30" rule="LocalVariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablenamingconventions" priority="1">
+The local variable name 'URIAsString' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="98" endline="98" begincolumn="20" endcolumn="30" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'URIAsString' starts with uppercase character.
+</violation>
+<violation beginline="101" endline="101" begincolumn="13" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'tagURI' could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="39" endcolumn="96" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="105" endline="105" begincolumn="13" endcolumn="96" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractAnchors" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'builder' could be declared final
+</violation>
+<violation beginline="120" endline="120" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'extractedStrings' could be declared final
+</violation>
+<violation beginline="124" endline="124" begincolumn="13" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'URIAsString' could be declared final
+</violation>
+<violation beginline="124" endline="124" begincolumn="20" endcolumn="30" rule="LocalVariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablenamingconventions" priority="1">
+The local variable name 'URIAsString' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="124" endline="124" begincolumn="20" endcolumn="30" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'URIAsString' starts with uppercase character.
+</violation>
+<violation beginline="127" endline="127" begincolumn="13" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'tagURI' could be declared final
+</violation>
+<violation beginline="131" endline="131" begincolumn="39" endcolumn="95" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="131" endline="131" begincolumn="13" endcolumn="95" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractImages" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'builder' could be declared final
+</violation>
+<violation beginline="146" endline="146" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'extractedStrings' could be declared final
+</violation>
+<violation beginline="150" endline="150" begincolumn="13" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'URIAsString' could be declared final
+</violation>
+<violation beginline="150" endline="150" begincolumn="20" endcolumn="30" rule="LocalVariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablenamingconventions" priority="1">
+The local variable name 'URIAsString' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="150" endline="150" begincolumn="20" endcolumn="30" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'URIAsString' starts with uppercase character.
+</violation>
+<violation beginline="153" endline="153" begincolumn="13" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'tagURI' could be declared final
+</violation>
+<violation beginline="157" endline="157" begincolumn="39" endcolumn="96" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="157" endline="157" begincolumn="13" endcolumn="96" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractScripts" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'builder' could be declared final
+</violation>
+<violation beginline="172" endline="172" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'extractedStrings' could be declared final
+</violation>
+<violation beginline="176" endline="176" begincolumn="13" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'URIAsString' could be declared final
+</violation>
+<violation beginline="176" endline="176" begincolumn="20" endcolumn="30" rule="LocalVariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablenamingconventions" priority="1">
+The local variable name 'URIAsString' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="176" endline="176" begincolumn="20" endcolumn="30" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" variable="URIAsString" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'URIAsString' starts with uppercase character.
+</violation>
+<violation beginline="179" endline="179" begincolumn="13" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'tagURI' could be declared final
+</violation>
+<violation beginline="183" endline="183" begincolumn="39" endcolumn="100" rule="AvoidInstantiatingObjectsInLoops" ruleset="Performance" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidinstantiatingobjectsinloops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="183" endline="183" begincolumn="13" endcolumn="100" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="extractStylesheets" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'builder' could be declared final
+</violation>
+<violation beginline="207" endline="207" begincolumn="9" endcolumn="83" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="build" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'createdHTMLDoc' could be declared final
+</violation>
+<violation beginline="212" endline="212" begincolumn="9" endcolumn="30" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="HTMLDocBuilder" method="build" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'createdHTMLDoc'
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\ImageAnalysis.java">
+<violation beginline="11" endline="35" begincolumn="28" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="edu.odu.cs.cs350" class="ImageAnalysis" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="11" endline="35" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+The utility class name 'ImageAnalysis' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
+</violation>
+<violation beginline="12" endline="12" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="13" endline="13" begincolumn="9" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'url' could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ImageAnalysis" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="18" endline="18" begincolumn="37" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="getImageSize" variable="urlStr" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'urlStr' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="9" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="getImageSize" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'url' could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="9" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="getImageSize" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'conn' could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="16" endcolumn="42" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ImageAnalysis" method="getImageSize" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="24" endline="24" begincolumn="38" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" variable="url" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'url' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="9" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'doc' could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="24" endcolumn="47" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="27" endline="27" begincolumn="9" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'imgTags' could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="28" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="28" endline="28" begincolumn="14" endcolumn="27" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'imgTag' could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="13" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'imageUrl' could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ImageAnalysis" method="sumImageSizes" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\MyFileVisitor.java">
+<violation beginline="14" endline="14" begincolumn="24" endcolumn="32" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="MyFileVisitor" variable="filePaths" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="24" endcolumn="32" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="MyFileVisitor" variable="filePaths" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'filePaths' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="15" endline="15" begincolumn="18" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="MyFileVisitor" variable="rootPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="18" endcolumn="25" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="MyFileVisitor" variable="rootPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'rootPath' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="21" endline="25" begincolumn="12" endcolumn="5" rule="CallSuperInConstructor" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="MyFileVisitor" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#callsuperinconstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="21" endline="21" begincolumn="26" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="MyFileVisitor" variable="rootPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'rootPath' is not assigned and could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="47" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="postVisitDirectory" variable="dir" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'dir' is not assigned and could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="57" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="postVisitDirectory" variable="exc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'exc' is not assigned and could be declared final
+</violation>
+<violation beginline="56" endline="56" begincolumn="56" endcolumn="80" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="preVisitDirectory" variable="attrs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'attrs' is not assigned and could be declared final
+</violation>
+<violation beginline="56" endline="56" begincolumn="46" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="preVisitDirectory" variable="dir" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'dir' is not assigned and could be declared final
+</violation>
+<violation beginline="60" endline="60" begincolumn="9" endcolumn="52" rule="PrematureDeclaration" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="preVisitDirectory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="60" endline="60" begincolumn="14" endcolumn="25" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.odu.cs.cs350" class="MyFileVisitor" method="preVisitDirectory" variable="relativePath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'relativePath'.
+</violation>
+<violation beginline="60" endline="63" begincolumn="14" endcolumn="52" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="MyFileVisitor" method="preVisitDirectory" variable="relativePath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'relativePath' (lines '60'-'63').
+</violation>
+<violation beginline="60" endline="60" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="preVisitDirectory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'relativePath' could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="49" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="visitFile" variable="attrs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'attrs' is not assigned and could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="38" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="visitFile" variable="file" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'file' is not assigned and could be declared final
+</violation>
+<violation beginline="76" endline="76" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="visitFile" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'relativePath' could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="44" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="visitFileFailed" variable="dir" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'dir' is not assigned and could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="54" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="MyFileVisitor" method="visitFileFailed" variable="exc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'exc' is not assigned and could be declared final
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="MyFileVisitor" method="visitFileFailed" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.err.println is used
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\ReportManager.java">
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportManager" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="31" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'BaseFileName' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="31" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'BaseFileName' starts with uppercase character.
+</violation>
+<violation beginline="14" endline="14" begincolumn="21" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportManager" variable="site" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="20" endline="20" begincolumn="29" endcolumn="32" rule="NullAssignment" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportManager" method="ReportManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="21" endline="21" begincolumn="21" endcolumn="24" rule="NullAssignment" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportManager" method="ReportManager" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="29" endline="29" begincolumn="31" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" method="setSourceData" variable="sourceData" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sourceData' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="13" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" method="determineBaseFileName" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'now' could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="13" endcolumn="88" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" method="determineBaseFileName" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'formatter' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="13" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" method="determineBaseFileName" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'formattedDateTime' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="40" endcolumn="60" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="determineBaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="46" endline="46" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportManager" method="determineBaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="47" endline="47" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportManager" method="determineBaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="66" endline="66" begincolumn="34" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" method="writeReportNames" variable="nameWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'nameWriter' is not assigned and could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="29" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeReportNames" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="70" endline="70" begincolumn="22" endcolumn="66" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeReportNames" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="73" endline="73" begincolumn="22" endcolumn="66" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeReportNames" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="85" endline="85" begincolumn="9" endcolumn="34" rule="PrematureDeclaration" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="85" endline="97" begincolumn="13" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" variable="writer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'writer' (lines '85'-'97').
+</violation>
+<violation beginline="85" endline="115" begincolumn="22" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" variable="writer" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'writer' (lines '85'-'115').
+</violation>
+<violation beginline="89" endline="89" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="93" endline="93" begincolumn="47" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="98" endline="98" begincolumn="13" endcolumn="43" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="99" endline="99" begincolumn="13" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="102" endline="102" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportManager" method="writeall" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\ReportWriter.java">
+<violation beginline="9" endline="9" begincolumn="20" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="9" endline="9" begincolumn="20" endcolumn="31" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'BaseFileName' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="9" endline="9" begincolumn="20" endcolumn="31" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'BaseFileName' starts with uppercase character.
+</violation>
+<violation beginline="10" endline="10" begincolumn="21" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportWriter" variable="site" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="42" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="ReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'BaseFileName' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="ReportWriter" variable="website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'website' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="49" endcolumn="60" rule="FormalParameterNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="ReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'BaseFileName' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="27" endline="27" begincolumn="49" endcolumn="60" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="ReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'BaseFileName' starts with uppercase character.
+</violation>
+<violation beginline="38" endline="38" begincolumn="31" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="setSourceData" variable="sourceData" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sourceData' is not assigned and could be declared final
+</violation>
+<violation beginline="56" endline="56" begincolumn="33" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="setBaseFileName" variable="newBaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'newBaseFileName' is not assigned and could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="69" endline="69" begincolumn="13" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="72" endline="72" begincolumn="9" endcolumn="76" rule="PrematureDeclaration" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="write" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="72" endline="86" begincolumn="26" endcolumn="76" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ReportWriter" method="write" variable="textFile" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'textFile' (lines '72'-'86').
+</violation>
+<violation beginline="72" endline="72" begincolumn="9" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="write" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'textFile' could be declared final
+</violation>
+<violation beginline="73" endline="73" begincolumn="9" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="write" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'websiteBuilder' could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="9" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ReportWriter" method="write" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'files' could be declared final
+</violation>
+<violation beginline="77" endline="77" begincolumn="13" endcolumn="27" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="78" endline="78" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="82" endline="82" begincolumn="9" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="82" endline="82" begincolumn="47" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="82" endline="82" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ReportWriter" method="write" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\Resource.java">
+<violation beginline="10" endline="114" begincolumn="8" endcolumn="1" rule="DataClass" ruleset="Design" package="edu.odu.cs.cs350" class="Resource" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'Resource' is suspected to be a Data Class (WOC=25.000%, NOPA=0, NOAM=7, WMC=12)
+</violation>
+<violation beginline="14" endline="14" begincolumn="27" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Resource" variable="foundOn" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="22" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Resource" variable="linkLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="18" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Resource" variable="sizeOf" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="26" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Resource" variable="resourceType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="26" endcolumn="37" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="Resource" variable="resourceType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'resourceType' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="26" endline="26" begincolumn="32" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="Resource" variable="inLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inLocality' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="53" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="Resource" variable="inType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inType' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="21" endcolumn="29" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="Resource" variable="inUrl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inUrl' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="34" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="Resource" variable="inLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inLocality' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="21" endcolumn="31" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="Resource" variable="inPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inPath' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="55" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="Resource" variable="inType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inType' is not assigned and could be declared final
+</violation>
+<violation beginline="94" endline="94" begincolumn="30" endcolumn="35" rule="AvoidPrefixingMethodParameters" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setPath" variable="inPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidprefixingmethodparameters" priority="4">
+Avoid prefixing parameters by in, out or inOut. Uses Javadoc to document this behavior.
+</violation>
+<violation beginline="94" endline="94" begincolumn="25" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setPath" variable="inPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inPath' is not assigned and could be declared final
+</violation>
+<violation beginline="100" endline="100" begincolumn="28" endcolumn="32" rule="AvoidPrefixingMethodParameters" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setUrl" variable="inUrl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidprefixingmethodparameters" priority="4">
+Avoid prefixing parameters by in, out or inOut. Uses Javadoc to document this behavior.
+</violation>
+<violation beginline="100" endline="100" begincolumn="24" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setUrl" variable="inUrl" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inUrl' is not assigned and could be declared final
+</violation>
+<violation beginline="106" endline="106" begincolumn="38" endcolumn="47" rule="AvoidPrefixingMethodParameters" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setLocality" variable="inLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidprefixingmethodparameters" priority="4">
+Avoid prefixing parameters by in, out or inOut. Uses Javadoc to document this behavior.
+</violation>
+<violation beginline="106" endline="106" begincolumn="29" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setLocality" variable="inLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inLocality' is not assigned and could be declared final
+</violation>
+<violation beginline="112" endline="112" begincolumn="30" endcolumn="35" rule="AvoidPrefixingMethodParameters" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setSize" variable="inSize" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidprefixingmethodparameters" priority="4">
+Avoid prefixing parameters by in, out or inOut. Uses Javadoc to document this behavior.
+</violation>
+<violation beginline="112" endline="112" begincolumn="25" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Resource" method="setSize" variable="inSize" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inSize' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\ResourceBuilder.java">
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="17" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="ResourceBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.io'
+</violation>
+<violation beginline="13" endline="13" begincolumn="12" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="givenURI" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="5" endcolumn="20" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the givenURI field if you want a default access modifier
+</violation>
+<violation beginline="13" endline="13" begincolumn="5" endcolumn="20" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="14" endline="14" begincolumn="15" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="baseURLs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="14" endline="14" begincolumn="5" endcolumn="23" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the baseURLs field if you want a default access modifier
+</violation>
+<violation beginline="14" endline="14" begincolumn="5" endcolumn="23" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="22" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the location field if you want a default access modifier
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="22" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="16" endline="16" begincolumn="18" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="type" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="22" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the type field if you want a default access modifier
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="22" rule="DefaultPackage" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="19" endline="19" begincolumn="42" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="ResourceBuilder" variable="inType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inType' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="28" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="ResourceBuilder" variable="inURI" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inURI' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="63" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="ResourceBuilder" variable="inURLs" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inURLs' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="34" begincolumn="13" endcolumn="25" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="determineURIType" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="66" endline="66" begincolumn="9" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="sameAsDomain" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'givenURL' could be declared final
+</violation>
+<violation beginline="68" endline="81" begincolumn="16" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" method="sameAsDomain" variable="resourceHost" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'resourceHost' (lines '68'-'81').
+</violation>
+<violation beginline="68" endline="68" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="sameAsDomain" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'resourceHost' could be declared final
+</violation>
+<violation beginline="71" endline="71" begincolumn="13" endcolumn="20" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="sameAsDomain" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'host' could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="17" endcolumn="28" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="sameAsDomain" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="93" endline="93" begincolumn="39" endcolumn="43" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" method="determineLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="93" endline="93" begincolumn="39" endcolumn="43" rule="UseEqualsToCompareStrings" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" method="determineLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#useequalstocomparestrings" priority="3">
+Use equals() to compare strings instead of '==' or '!='
+</violation>
+<violation beginline="97" endline="97" begincolumn="17" endcolumn="42" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="determineLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="102" endline="102" begincolumn="17" endcolumn="42" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="determineLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="107" endline="107" begincolumn="17" endcolumn="41" rule="OnlyOneReturn" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="determineLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="123" endline="123" begincolumn="38" endcolumn="42" rule="AvoidPrefixingMethodParameters" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="convertURLToPath" variable="inURL" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidprefixingmethodparameters" priority="4">
+Avoid prefixing parameters by in, out or inOut. Uses Javadoc to document this behavior.
+</violation>
+<violation beginline="123" endline="123" begincolumn="34" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="convertURLToPath" variable="inURL" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inURL' is not assigned and could be declared final
+</violation>
+<violation beginline="141" endline="141" begincolumn="39" endcolumn="43" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" method="buildResource" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="141" endline="141" begincolumn="39" endcolumn="43" rule="UseEqualsToCompareStrings" ruleset="Error Prone" package="edu.odu.cs.cs350" class="ResourceBuilder" method="buildResource" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#useequalstocomparestrings" priority="3">
+Use equals() to compare strings instead of '==' or '!='
+</violation>
+<violation beginline="144" endline="144" begincolumn="13" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="buildResource" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'uriURL' could be declared final
+</violation>
+<violation beginline="151" endline="151" begincolumn="13" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="buildResource" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'uriPath' could be declared final
+</violation>
+<violation beginline="157" endline="157" begincolumn="13" endcolumn="61" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="ResourceBuilder" method="buildResource" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="170" endline="170" begincolumn="38" endcolumn="47" rule="AvoidPrefixingMethodParameters" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="setLocation" variable="inLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#avoidprefixingmethodparameters" priority="4">
+Avoid prefixing parameters by in, out or inOut. Uses Javadoc to document this behavior.
+</violation>
+<violation beginline="170" endline="170" begincolumn="29" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="ResourceBuilder" method="setLocation" variable="inLocality" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'inLocality' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\TextReportWriter.java">
+<violation beginline="12" endline="12" begincolumn="21" endcolumn="24" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.odu.cs.cs350" class="TextReportWriter" variable="site" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'site'.
+</violation>
+<violation beginline="12" endline="12" begincolumn="21" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="TextReportWriter" variable="site" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="31" rule="FieldNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'BaseFileName' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="13" endline="13" begincolumn="20" endcolumn="31" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'BaseFileName' starts with uppercase character.
+</violation>
+<violation beginline="20" endline="20" begincolumn="21" endcolumn="24" rule="NullAssignment" ruleset="Error Prone" package="edu.odu.cs.cs350" class="TextReportWriter" method="TextReportWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="21" endline="21" begincolumn="29" endcolumn="32" rule="NullAssignment" ruleset="Error Prone" package="edu.odu.cs.cs350" class="TextReportWriter" method="TextReportWriter" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="30" endline="30" begincolumn="46" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="TextReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'BaseFileName' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="29" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="TextReportWriter" variable="website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'website' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="53" endcolumn="64" rule="FormalParameterNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="TextReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'BaseFileName' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="30" endline="30" begincolumn="53" endcolumn="64" rule="VariableNamingConventions" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="TextReportWriter" variable="BaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'BaseFileName' starts with uppercase character.
+</violation>
+<violation beginline="40" endline="40" begincolumn="31" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="setSourceData" variable="sourceData" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sourceData' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="33" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="setBaseFileName" variable="newBaseFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'newBaseFileName' is not assigned and could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="47" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="sortWebsitesLexicographically" variable="paths" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'paths' is not assigned and could be declared final
+</violation>
+<violation beginline="70" endline="70" begincolumn="59" endcolumn="84" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350" class="TextReportWriter" method="sortWebsitesLexicographically" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
+When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+</violation>
+<violation beginline="80" endline="80" begincolumn="43" endcolumn="63" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="prepare" variable="outputFileName" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'outputFileName' is not assigned and could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="25" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="prepare" variable="paths" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'paths' is not assigned and could be declared final
+</violation>
+<violation beginline="90" endline="99" begincolumn="16" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="TextReportWriter" method="prepare" variable="outputFilePath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'outputFilePath' (lines '90'-'99').
+</violation>
+<violation beginline="90" endline="90" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="prepare" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'outputFilePath' could be declared final
+</violation>
+<violation beginline="91" endline="91" begincolumn="61" endcolumn="70" rule="AvoidFileStream" ruleset="Performance" package="edu.odu.cs.cs350" class="TextReportWriter" method="prepare" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_performance.html#avoidfilestream" priority="1">
+Avoid instantiating FileInputStream, FileOutputStream, FileReader, or FileWriter
+</violation>
+<violation beginline="92" endline="92" begincolumn="18" endcolumn="26" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="TextReportWriter" method="prepare" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'path' could be declared final
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\Website.java">
+<violation beginline="9" endline="9" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.Files'
+</violation>
+<violation beginline="20" endline="20" begincolumn="17" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="url" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="23" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" variable="urls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="23" endcolumn="26" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350" class="Website" variable="urls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'urls' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="33" endline="33" begincolumn="21" endcolumn="40" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="42" endline="42" begincolumn="24" endcolumn="24" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like u
+</violation>
+<violation beginline="42" endline="42" begincolumn="20" endcolumn="24" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'u' is not assigned and could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="21" endcolumn="40" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="52" endline="52" begincolumn="34" endcolumn="35" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="sp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like sp
+</violation>
+<violation beginline="52" endline="52" begincolumn="24" endcolumn="24" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like u
+</violation>
+<violation beginline="52" endline="52" begincolumn="27" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="sp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sp' is not assigned and could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="20" endcolumn="24" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'u' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="21" endcolumn="40" rule="UseDiamondOperator" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="Website" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#usediamondoperator" priority="3">
+Explicit type arguments can be replaced by Diamond Operator
+</violation>
+<violation beginline="63" endline="63" begincolumn="32" endcolumn="33" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="setPath" variable="sp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like sp
+</violation>
+<violation beginline="63" endline="63" begincolumn="25" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="setPath" variable="sp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sp' is not assigned and could be declared final
+</violation>
+<violation beginline="95" endline="95" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="addURL" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like u
+</violation>
+<violation beginline="95" endline="95" begincolumn="24" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="addURL" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'u' is not assigned and could be declared final
+</violation>
+<violation beginline="103" endline="103" begincolumn="28" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="setURL" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like u
+</violation>
+<violation beginline="103" endline="103" begincolumn="24" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="setURL" variable="u" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'u' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="36" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" variable="sPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'sPath' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="50" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" variable="urLists" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'urLists' is not assigned and could be declared final
+</violation>
+<violation beginline="123" endline="127" begincolumn="13" endcolumn="31" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" variable="urlTemp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'urlTemp' (lines '123'-'127').
+</violation>
+<violation beginline="123" endline="135" begincolumn="13" endcolumn="53" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" variable="urlTemp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'urlTemp' (lines '123'-'135').
+</violation>
+<violation beginline="124" endline="124" begincolumn="27" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" variable="it" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like it
+</violation>
+<violation beginline="124" endline="124" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'it' could be declared final
+</violation>
+<violation beginline="130" endline="130" begincolumn="29" endcolumn="47" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="131" endline="131" begincolumn="22" endcolumn="46" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350" class="Website" method="convertURLToPath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="143" endline="143" begincolumn="42" endcolumn="42" rule="ShortVariable" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="convertRelativePath" variable="p" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like p
+</violation>
+<violation beginline="143" endline="143" begincolumn="37" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="Website" method="convertRelativePath" variable="p" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'p' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Users\cldeb\Coding Stuff\CS350\Summer 2023\semester-project-website-analysis-tuesday-2\app\src\main\java\edu\odu\cs\cs350\WebsiteBuilder.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="30" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.io.BufferedReader'
+</violation>
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="30" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.io.BufferedWriter'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.io.FileWriter'
+</violation>
+<violation beginline="10" endline="10" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.Paths'
+</violation>
+<violation beginline="11" endline="11" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.ArrayList'
+</violation>
+<violation beginline="12" endline="12" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+<violation beginline="14" endline="14" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.FileVisitResult'
+</violation>
+<violation beginline="15" endline="15" begincolumn="1" endcolumn="39" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.SimpleFileVisitor'
+</violation>
+<violation beginline="16" endline="16" begincolumn="1" endcolumn="51" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.nio.file.attribute.BasicFileAttributes'
+</violation>
+<violation beginline="17" endline="17" begincolumn="1" endcolumn="35" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.stream.Collectors'
+</violation>
+<violation beginline="18" endline="18" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.w3c.dom.html.HTMLDocument'
+</violation>
+<violation beginline="23" endline="23" begincolumn="18" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="WebsiteBuilder" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="24" endline="24" begincolumn="23" endcolumn="26" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.odu.cs.cs350" class="WebsiteBuilder" variable="urls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'urls'.
+</violation>
+<violation beginline="24" endline="24" begincolumn="23" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350" class="WebsiteBuilder" variable="urls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="30" endline="30" begincolumn="16" endcolumn="19" rule="NullAssignment" ruleset="Error Prone" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="31" endline="31" begincolumn="16" endcolumn="19" rule="NullAssignment" ruleset="Error Prone" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="WebsiteBuilder" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="40" endline="40" begincolumn="27" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="WebsiteBuilder" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'path' is not assigned and could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="38" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="WebsiteBuilder" variable="urls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'urls' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="36" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="withPath" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'path' is not assigned and could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="36" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="withURLs" variable="urls" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'urls' is not assigned and could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="37" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="walkDirectory" variable="websitePath" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'websitePath' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="9" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="walkDirectory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'visitor' could be declared final
+</violation>
+<violation beginline="111" endline="111" begincolumn="9" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="edu.odu.cs.cs350" class="WebsiteBuilder" method="build" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'website' could be declared final
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>

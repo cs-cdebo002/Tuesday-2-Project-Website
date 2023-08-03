@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ResourceBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">ResourceBuilder.java</span></div><h1>ResourceBuilder.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.util.*;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.net.MalformedURLException;
+import java.io.*;
+
+
+public class ResourceBuilder{
+
+    String givenURI;
+    List&lt;URL&gt; baseURLs;
+    Locality location;
+    ResourceKind type;
+
+    //Constructor for a resource given a URI and type
+<span class="fc" id="L19">    public ResourceBuilder(String inURI, ResourceKind inType, List&lt;URL&gt; inURLs){</span>
+<span class="fc" id="L20">        this.givenURI = inURI;</span>
+<span class="fc" id="L21">        this.type = inType;</span>
+<span class="fc" id="L22">        this.baseURLs = inURLs;</span>
+<span class="fc" id="L23">    }</span>
+
+    /**
+     * Determines if a given string is a URL or a path and returns a string saying which it is
+     * @param inURI a string which will be analyzed
+     * @return String a string containing either &quot;URL&quot; or &quot;Path&quot;
+     */
+    public String determineURIType(){
+        
+        // If it has any of the signifiers of a url, which can't be used in a path, return &quot;URL&quot;
+<span class="pc bpc" id="L33" title="2 of 6 branches missed.">        if(givenURI.contains(&quot;:&quot;) || givenURI.contains(&quot;htttp://&quot;) || givenURI.contains(&quot;https://&quot;)){</span>
+<span class="fc" id="L34">            return &quot;URL&quot;;</span>
+        }
+
+        // If none are found, return &quot;Path&quot;
+        else{
+<span class="fc" id="L39">            return &quot;Path&quot;;</span>
+        }
+    }
+
+
+    /**
+     * Determines and returns the size of a resource
+     * @param 
+     * @return long the size of the file
+     */
+    public long determineFileSize(){
+
+        //...
+
+<span class="nc" id="L53">        return 0;</span>
+    }
+
+
+    /**
+     * Determines if a given URL has the same domain name as any of the base URLs
+     * @param inURL a url to compare to the list of base url's
+     * @return Boolean true if the given URL shares a domain name with one of the base URLs
+     * @throws MalformedURLException
+     */
+    public Boolean sameAsDomain() throws MalformedURLException{
+
+        // Turns the given URL string into a URL object
+<span class="fc" id="L66">        URL givenURL = new URL(givenURI);</span>
+        // Records the URLs host in domainName
+<span class="fc" id="L68">        String resourceHost = givenURL.getHost();</span>
+
+        // Loops through all of the URLs in baseURLs
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        for(URL host : baseURLs){</span>
+
+            // If any match the domain name of the given URL, return true
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">            if(host.getHost() == resourceHost){</span>
+<span class="nc" id="L75">                return true;</span>
+            }
+<span class="fc" id="L77">        }</span>
+        
+        // If none match, return false
+<span class="fc" id="L80">        return false;</span>
+    }
+
+
+    /**
+     * Determines the locality of a resource
+     * @param n/a
+     * @return Locality the locality of a resource to be built
+     * @throws MalformedURLException
+     */
+    public Locality determineLocality() throws MalformedURLException{
+        
+        // If the given URI is a URL
+<span class="pc bpc" id="L93" title="1 of 2 branches missed.">        if(this.determineURIType() == &quot;URL&quot;){</span>
+
+            // If a link contains a '#' symbol and has the same domain name as one of the base URLs, it is an intrapage anchor
+<span class="pc bpc" id="L96" title="2 of 4 branches missed.">            if(givenURI.contains(&quot;#&quot;) &amp;&amp; sameAsDomain()){ </span>
+<span class="nc" id="L97">                return Locality.INTRAPAGE; </span>
+            }
+
+            // If a link shares a domain name with the a base url, it is interpage
+<span class="pc bpc" id="L101" title="1 of 2 branches missed.">            else if(sameAsDomain()){ </span>
+<span class="nc" id="L102">                return Locality.INTERPAGE; </span>
+            }
+
+            // Otherwise, it is external
+            else{ 
+<span class="fc" id="L107">                return Locality.EXTERNAL; </span>
+            }
+        }
+
+        // If the given URI is a path
+        else{
+<span class="nc" id="L113">            return Locality.INTERPAGE;</span>
+        }
+    }
+
+
+    /**
+     * Converts a path object to a URL object
+     * @param inURL a URL object to be converted to a path
+     * @return Path a converted URL
+     */
+    public Path convertURLToPath(URL inURL){
+
+        //...
+<span class="nc" id="L126">        return null;</span>
+    }
+
+
+    /**
+     * Creates and returns a resource object
+     * @param n/a
+     * @return createdResource a resource object created based on a provided HTML tag
+     * @throws MalformedURLException
+     */
+    public Resource buildResource() throws MalformedURLException{
+
+        Resource createdResource;
+
+        // If a url was given, create a resource with a url
+<span class="pc bpc" id="L141" title="1 of 2 branches missed.">        if(this.determineURIType() == &quot;URL&quot;){</span>
+            
+            // test if URL is valid
+<span class="fc" id="L144">            URL uriURL = new URL(givenURI);</span>
+                
+<span class="fc" id="L146">            createdResource = new Resource(uriURL, this.determineLocality(), this.type);</span>
+<span class="fc" id="L147">        }</span>
+
+        // If a path was given, create a resource with a path
+        else{
+<span class="nc" id="L151">            Path uriPath = Paths.get(givenURI);</span>
+<span class="nc" id="L152">            createdResource = new Resource(uriPath, this.determineLocality(), this.type);</span>
+        }
+
+        // If the resource is an image, record the filesize of the image
+<span class="pc bpc" id="L156" title="1 of 2 branches missed.">        if(createdResource.getResourceKind() == ResourceKind.IMAGE){</span>
+<span class="nc" id="L157">            createdResource.setSize(this.determineFileSize());</span>
+        }
+
+        // Return the created resource
+<span class="fc" id="L161">        return createdResource;</span>
+    }
+
+    // Accessors
+<span class="fc" id="L165">    public String getGivenURI(){ return givenURI; }</span>
+<span class="fc" id="L166">    public List&lt;URL&gt; getBaseURLs(){ return baseURLs;}</span>
+<span class="nc" id="L167">    public Locality getLocation(){ return location; }</span>
+<span class="fc" id="L168">    public ResourceKind getResourceKind(){ return type; }</span>
+
+<span class="nc" id="L170">    public void setLocation(Locality inLocality){ location = inLocality;}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

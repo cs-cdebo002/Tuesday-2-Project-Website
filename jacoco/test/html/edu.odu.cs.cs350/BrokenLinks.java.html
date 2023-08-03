@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BrokenLinks.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">BrokenLinks.java</span></div><h1>BrokenLinks.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+
+<span class="nc" id="L8">public class BrokenLinks {</span>
+    // This functiuon check to see if the link is broke by making a request to the link and seeing if the responsecode is 400 or higher.
+    public static boolean isLinkBroken(String url) {
+        try {
+<span class="nc" id="L12">            URL link = new URL(url);</span>
+<span class="nc" id="L13">            HttpURLConnection connection = (HttpURLConnection) link.openConnection();</span>
+<span class="nc" id="L14">            connection.setRequestMethod(&quot;HEAD&quot;);</span>
+<span class="nc" id="L15">            int responseCode = connection.getResponseCode();</span>
+<span class="nc bnc" id="L16" title="All 2 branches missed.">            return (responseCode &gt;= 400);</span>
+<span class="nc" id="L17">        } catch (IOException e) {</span>
+            
+<span class="nc" id="L19">            return true;</span>
+        }
+    }
+
+    public static void main(String[] args) {
+<span class="nc" id="L24">        String url = &quot;https://google.com&quot;;</span>
+<span class="nc" id="L25">        boolean isBroken = isLinkBroken(url);</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">        if (isBroken) {</span>
+<span class="nc" id="L27">            System.out.println(&quot;The link is broken.&quot;);</span>
+        } else {
+<span class="nc" id="L29">            System.out.println(&quot;The link is valid.&quot;);</span>
+        }
+<span class="nc" id="L31">    } </span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

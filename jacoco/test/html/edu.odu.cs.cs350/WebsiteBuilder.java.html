@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>WebsiteBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">edu.odu.cs.cs350</a> &gt; <span class="el_source">WebsiteBuilder.java</span></div><h1>WebsiteBuilder.java</h1><pre class="source lang-java linenums">package edu.odu.cs.cs350;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.nio.file.FileVisitResult;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.stream.Collectors;
+import org.w3c.dom.html.HTMLDocument;
+
+
+
+public class WebsiteBuilder {
+    private Path path;
+    private List&lt;URL&gt; urls;
+
+    /**
+     * Default constructor for WebsiteBuilder.
+     */
+<span class="nc" id="L29">    public WebsiteBuilder() {</span>
+<span class="nc" id="L30">        path = null;</span>
+<span class="nc" id="L31">        urls = null;</span>
+<span class="nc" id="L32">    }</span>
+
+    /**
+     * Constructor for WebsiteBuilder with initial path and URLs.
+     *
+     * @param path The initial path of the website.
+     * @param urls The initial list of URLs for the website.
+     */
+<span class="nc" id="L40">    public WebsiteBuilder(Path path, List&lt;URL&gt; urls) {</span>
+<span class="nc" id="L41">        this.path = path;</span>
+<span class="nc" id="L42">        this.urls = urls;</span>
+<span class="nc" id="L43">    }</span>
+
+    /**
+     * Sets the path of the website.
+     *
+     * @param path The path of the website.
+     * @return The current instance of WebsiteBuilder.
+     */
+    public WebsiteBuilder withPath(Path path) {
+<span class="nc" id="L52">        this.path = path;</span>
+<span class="nc" id="L53">        return this;</span>
+    }
+
+    /**
+     * Sets the list of URLs for the website.
+     *
+     * @param urls The list of URLs for the website.
+     * @return The current instance of WebsiteBuilder.
+     */
+    public WebsiteBuilder withURLs(List&lt;URL&gt; urls) {
+<span class="nc" id="L63">        this.urls = urls;</span>
+<span class="nc" id="L64">        return this;</span>
+    }
+
+    /**
+     * Walks the directory and returns a list of file paths.
+     *
+     * @param websitePath The path of the website.
+     * @return The list of file paths in the directory.
+     * @throws IOException
+     */
+    public List&lt;Path&gt; walkDirectory(Path websitePath) throws IOException {
+<span class="nc" id="L75">        MyFileVisitor visitor = new MyFileVisitor(websitePath);</span>
+<span class="nc" id="L76">        Files.walkFileTree(websitePath, visitor);</span>
+<span class="nc" id="L77">        return visitor.getFilePaths();</span>
+    }
+
+    /**
+     * Builds a website object using the provided path and URLs.
+     *
+     * additional steps, TODO
+     *
+     * @return The constructed Website object.
+     * @throws IOException 
+     */
+    public Website build() throws IOException {
+        // The original code was commented out. Uncomment as needed.
+        /*List&lt;Path&gt; files = walkDirectory(this.path);
+        // Prune non-HTML files from the list of files
+        pruneNonHTMLFiles(files);
+
+        List&lt;HTMLDocument&gt; parsedDocuments = new ArrayList&lt;&gt;();
+        for (Path htmlFile : files) {
+            BufferedReader buffer = Files.newBufferedReader(htmlFile);
+
+            HTMLDocument doc = new HTMLDocumentBuilder()
+                    .withContentFrom(buffer)
+                    .withWebsiteBasepath(this.path)  
+                    .withWebsiteURLs(this.urls)  
+                    .extractContent()
+                    .build();
+
+            parsedDocuments.add(doc);
+        }
+
+        Website site = new Website(this.path, this.urls, parsedDocuments);
+
+        return site;*/
+<span class="nc" id="L111">        Website website = new Website();</span>
+<span class="nc" id="L112">        website.setPath(path.toString()); // Set the path using the setSPath() method</span>
+    
+<span class="nc" id="L114">        return website;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
